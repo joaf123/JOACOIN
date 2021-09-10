@@ -12,16 +12,10 @@ tx1.signTransaction(myKey);
 joaCoin.addTransaction(tx1);
 
 console.log('\n Starting the miner...');
-console.log('Previous hash: ', joaCoin.getLatestBlock().previousHash)
-console.log('Hash: ', joaCoin.getLatestBlock().hash)
 joaCoin.minePendingTransactions(myWalletAddress);
-console.log('Previous hash: ', joaCoin.getLatestBlock().previousHash)
 
 // Mine pending again to get the mining reward
-console.log('Hash: ', joaCoin.getLatestBlock().hash)
 joaCoin.minePendingTransactions(myWalletAddress);
-console.log('Previous hash: ', joaCoin.getLatestBlock().previousHash)
 
 console.log('\n Balance of Joachim is: ', joaCoin.getBalanceOfAddress(myWalletAddress));
-
 console.log('Is Chain Valid?: ', joaCoin.isChainValid());
