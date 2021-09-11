@@ -19,3 +19,9 @@ joaCoin.minePendingTransactions(myWalletAddress);
 
 console.log('\n Balance of Joachim is: ', joaCoin.getBalanceOfAddress(myWalletAddress));
 console.log('Is Chain Valid?: ', joaCoin.isChainValid());
+
+// Check if miningReward truly is read-only:
+// (function(){
+//     'use strict';
+//     joaCoin.miningReward = 200
+// }());

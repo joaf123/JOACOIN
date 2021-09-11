@@ -69,12 +69,16 @@ class Block {
 }
 
 
-class BlockChain{
-    constructor(){
+class BlockChain{    
+    constructor(){        
         this.chain = [this.createGenesisBlock()];
         this.difficulty = 4;
         this.pendingTransactions = [];
-        this.miningReward = 100;
+        // Dont allow changing of MiningReward later:
+        Object.defineProperty(this, "miningReward", {
+            value: 100,
+            writable: false
+        });
     }
 
     createGenesisBlock(){
