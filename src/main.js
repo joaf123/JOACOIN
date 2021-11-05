@@ -25,3 +25,5 @@ console.log('Is Chain Valid?: ', joaCoin.isChainValid());
 //     'use strict';
 //     joaCoin.miningReward = 200
 // }());
+
+// Comment added to test commit signing with GPG
