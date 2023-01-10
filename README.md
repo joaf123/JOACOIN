@@ -1,1 +1,1 @@
-### Created while following studying blockchains
+### Created while studying blockchains
