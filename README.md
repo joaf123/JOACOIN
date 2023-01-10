@@ -1,1 +1,1 @@
-### Created while following a js blockchain tutorial
+### Created while following studying blockchains
